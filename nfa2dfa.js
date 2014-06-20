@@ -16,22 +16,47 @@ Machin.prototype.change  =   function(definition){
     this.table      =   definition.table    ||  {};    
 }
 
+/**
+ * Set start state of NFA
+ * @param {type} start
+ * @returns {undefined}
+ */
 Machin.prototype.setStart   =   function(start){
     this.start  =   start;
 }
 
+/**
+ * Set names of states
+ * @param {type} states
+ * @returns {undefined}
+ */
 Machin.prototype.setStates  =   function (states){
     this.states =   states;
 }
 
+/**
+ * set final states
+ * @param {Array} finals
+ * @returns {undefined}
+ */
 Machin.prototype.setFinals  =   function(finals){
     this.finals =   finals;
 }
 
+/**
+ * Set NFA table
+ * @param {type} table
+ * @returns {undefined}
+ */
 Machin.prototype.setTable   =   function(table){
     this.table  =   table;
 }
 
+/**
+ * set NFA Symbols
+ * @param {type} symbols
+ * @returns {undefined}
+ */
 Machin.prototype.setSymbols =   function(symbols){
     this.symbols    =   symbols;
 }
